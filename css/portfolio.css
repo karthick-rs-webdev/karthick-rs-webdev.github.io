@@ -668,7 +668,7 @@ button{
     height: 100%;
 }
 .portfolio-section .portfolio-item h3{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     margin: 20px 0;
 }
@@ -899,7 +899,7 @@ button{
         font-size: 35px;
     }
     .portfolio-popup .pp-inner .pp-content .pp-header h3{
-        font-size: 20px;
+        font-size: 17px;
     }    
     .portfolio-popup .pp-inner .pp-content .pp-body .description ul{
         display: block;
