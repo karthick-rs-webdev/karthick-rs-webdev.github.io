@@ -139,8 +139,8 @@ a{
     text-decoration: none;
 }
 
-h1,h2{
-    font-weight: 600;
+h1, h2{
+    font-weight: 600 !important;
 }
 
 h3,h4,h5,h6{
@@ -493,7 +493,7 @@ button{
     font-size: 50px;
     text-transform: capitalize;
 }
-.home-text h2{
+.home-text p.role, .home-text h2{
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 300;
