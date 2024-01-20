@@ -21,7 +21,6 @@
     margin: 0;
     padding: 0;
     outline: none;
-    user-select: none;
     scroll-behavior: smooth;
 }
 ::before,
@@ -637,7 +636,7 @@ button{
     margin: 0 0 10px;
 }
 .about-text .timeline .timeline-item h4{
-    font-size: 18px;
+    font-size: 17px;
     text-transform: capitalize;
     margin: 0 0 10px;
 }
