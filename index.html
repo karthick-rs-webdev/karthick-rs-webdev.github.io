@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link type="image/png" sizes="32x32" rel="icon" href="./img/title-icon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
     <body>
         <!-- Page Loader Start -->
@@ -30,7 +29,7 @@
         <div class="main hidden">
             <!-- Header Start -->
             <header class="header">
-                <div class="container">
+                <div class="">
                     <div class="row flex-end">
                         <button type="button" class="nav-toggler">
                             <span></span>
@@ -40,7 +39,8 @@
                                 <ul>
                                     <li><a href="#home" class="nav-item link-item">home</a></li>
                                     <li><a href="#about" class="nav-item link-item">about</a></li>
-                                    <li><a href="#projects" class="nav-item link-item">projects</a></li>
+                                    <li><a href="#tools-and-achievements" class="nav-item link-item">tools</a></li>
+                                    <li><a href="#tools-and-achievements" class="nav-item link-item">achievements</a></li>
                                     <li><a href="#contact" class="nav-item link-item">contact</a></li>
                                 </ul>
                             </div>
@@ -50,7 +50,7 @@
             </header>
             <!-- Header End -->
             <!-- Home Section Start -->
-            <section class="home-section align-items-center active" id="home">
+            <section class="home-section align-items-center active flex justify-center" id="home">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="home-text">
@@ -71,7 +71,7 @@
             <!-- Home Section End -->
 
             <!-- About Section Start -->
-            <section class="about-section sec-padding" id="about">
+            <section class="about-section sec-padding flex justify-center" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title">
@@ -79,51 +79,53 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="about-img">
-                            <div class="img-box">
-                                <img src="img/about-img-2.png" alt="about-image">
-                            </div>
-                        </div>
                         <div class="about-text">
                             <p>Experienced Full Stack Web Developer with 3+ years in web development. Skilled in JavaScript, TypeScript, and libraries like React and Vue, as well as frameworks including Next.js, Gatsby.js and Express.js. Proficient in jQuery, Laravel, MySQL, Bootstrap and Tailwind CSS. A collaborative team player with strong communication skills, capable of achieving project goals in ever-evolving environments.</p>
-                            <h3>skills</h3>
-                            <div class="skills">
-                                <div class="skill-item">javascript</div>
-                                <div class="skill-item">typescript</div>
-                                <div class="skill-item">react js</div>
-                                <div class="skill-item">vue js</div>
-                                <div class="skill-item">next js</div>
-                                <div class="skill-item">svelte js</div>
-                                <div class="skill-item">gatsby js</div>
-                                <div class="skill-item">node js</div>
-                                <div class="skill-item">express js</div>
-                                <div class="skill-item">jquery</div>
-                                <div class="skill-item">react-redux</div>
-                                <div class="skill-item">vuex</div>
-                                <div class="skill-item">RTK query</div>
-                                <div class="skill-item">HTML</div>
-                                <div class="skill-item">CSS</div>
-                                <div class="skill-item">tailwind</div>
-                                <div class="skill-item">bootstrap</div>
-                                <div class="skill-item">laravel</div>
-                                <div class="skill-item">PHP</div>
-                                <div class="skill-item">MySQL</div>
-                            </div>
-                            <div class="about-tabs">
-                                <button type="button" class="tab-item active" data-target="#education">education</button>
-                                <button type="button" class="tab-item" data-target="#experience">experience</button>
-                            </div>
-                            <!-- Education Start -->
-                            <div class="tab-content active" id="education">
-                                <div class="timeline">
-                                    <div class="timeline-item">
-                                        <span class="date">2016-2020</span>
-                                        <h4>bachelor of engineering - <span>k.l.n. college of engineering</span></h4>
-                                        <p>Sivaganga, TamilNadu,  India</p>
+                            <div>
+                                <div>
+                                    <h3>skills</h3>
+                                    <div class="skills">
+                                        <div class="skill-item">javascript</div>
+                                        <div class="skill-item">typescript</div>
+                                        <div class="skill-item">react js</div>
+                                        <div class="skill-item">vue js</div>
+                                        <div class="skill-item">next js</div>
+                                        <div class="skill-item">svelte js</div>
+                                        <div class="skill-item">gatsby js</div>
+                                        <div class="skill-item">node js</div>
+                                        <div class="skill-item">express js</div>
+                                        <div class="skill-item">jquery</div>
+                                        <div class="skill-item">react-redux</div>
+                                        <div class="skill-item">vuex</div>
+                                        <div class="skill-item">RTK query</div>
+                                        <div class="skill-item">HTML</div>
+                                        <div class="skill-item">CSS</div>
+                                        <div class="skill-item">tailwind</div>
+                                        <div class="skill-item">bootstrap</div>
+                                        <div class="skill-item">laravel</div>
+                                        <div class="skill-item">PHP</div>
+                                        <div class="skill-item">MySQL</div>
+                                        <div class="skill-item">CI/CD Pipeline</div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="about-tabs">
+                                        <button type="button" class="tab-item active" data-target="#education">education</button>
+                                        <button type="button" class="tab-item" data-target="#experience">experience</button>
+                                    </div>
+                                    <!-- Education Start -->
+                                    <div class="tab-content active" id="education">
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <span class="date">2016-2020</span>
+                                                <h4>bachelor of engineering - <span>k.l.n. college of engineering</span></h4>
+                                                <p>Sivaganga, TamilNadu,  India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Education End -->
+                                </div>
                             </div>
-                            <!-- Education End -->
 
                             <!-- Experience Start -->
                             <div class="tab-content" id="experience">
@@ -142,15 +144,16 @@
                             </div>
                             <!-- Experience End -->
                             <a href="Karthick's Resume.pdf" target="_blank" class="btn">download cV</a>
-                            <a href="#contact" class="btn link-item">contact me</a>
+                            <a href="#contact" class="btn link-item">react me out</a>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- About Section End -->
 
-            <!-- Portfolio Section Start -->
-            <section class="portfolio-section sec-padding" id="projects">
+            <!--
+            <!- - project Section Start - ->
+            <section class="portfolio-section sec-padding flex justify-center" id="projects">
                 <div class="container">
                     <div class="row">
                         <div class="section-title">
@@ -158,7 +161,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <!-- Portfolio Item Start -->
+                        <!- - Portfolio Item Start - ->
                         <div class="portfolio-item">
                             <div class="portfolio-item-thumpnail">
                                 <img src="img/portfolio/portfolio-1.png" alt="portfolio item thumpnail">
@@ -179,8 +182,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
+                        <!- - Portfolio Item End - ->
+                        <!- - Portfolio Item Start - ->
                         <div class="portfolio-item">
                             <div class="portfolio-item-thumpnail">
                                 <img src="img/portfolio/portfolio-2.jpg" alt="portfolio item thumpnail">
@@ -201,8 +204,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
+                        <!- - Portfolio Item End - ->
+                        <!- - Portfolio Item Start - ->
                         <div class="portfolio-item">
                             <div class="portfolio-item-thumpnail">
                                 <img src="img/portfolio/portfolio-3.jpg" alt="portfolio item thumpnail">
@@ -224,13 +227,13 @@
                                         <li>Created - <span>apr 2020</span></li>
                                         <li>Technologies used - <span>Html, Css, Bootstrap, Laravel, Mysql</span></li>
                                         <li>Role - <span>Fullstack</span></li>
-                                        <!-- <li>View Online - <span><a href="#">www.domain.com</a></span></li> -->
+                                        <!- - <li>View Online - <span><a href="#">www.domain.com</a></span></li> - ->
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
+                        <!- - Portfolio Item End - ->
+                        <!- - Portfolio Item Start - ->
                         <div class="portfolio-item">
                             <div class="portfolio-item-thumpnail">
                                 <img src="img/portfolio/portfolio-4.jpg" alt="portfolio item thumpnail">
@@ -258,13 +261,82 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Portfolio Item End -->
+                        <!- - Portfolio Item End - ->
                     </div>
                 </div>
             </section>
-            <!-- Portfolio Section End -->
+            <!- - project Section End - ->
+            -->
+            <!-- Tools and certification Start -->
+            <!-- Tools and certification End -->
+            <section class="tools-and-achievements-section sec-padding flex justify-center" id="tools-and-achievements">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>tools and achievements</h2>
+                        </div>
+                    </div>
+                    <div class="tools-section-container">
+                        <div class="section-sub-title-container">
+                            <p class="section-sub-title">
+                                <span>Familiar Tools</span>
+                            </p>
+                        </div>
+                        <div class="tools-section">
+                            <div class="tools-section-item">
+                                <h3 class="item-title">Coding</h3>
+                                <hr/>
+                                <p class="item-content">Javascript, HTML, CSS</p>
+                            </div>
+                            <div class="tools-section-item">
+                                <h3 class="item-title">Payment Gateway</h3>
+                                <hr/>
+                                <p class="item-content">Braintree, Apple pay</p>
+                            </div>
+                            <div class="tools-section-item">
+                                <h3 class="item-title">CMS</h3>
+                                <hr/>
+                                <p class="item-content">Contentful, Apostrophe, Directus</p>
+                            </div>
+                            <div class="tools-section-item">
+                                <h3 class="item-title">No-Code</h3>
+                                <hr/>
+                                <p class="item-content">Framer, Webflow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievements-section-container ">
+                        <div class="section-sub-title-container">
+                            <p class="section-sub-title">
+                                <span>Certification and Achievements</span>
+                            </p>
+                        </div>
+                        <div class="achievements-list">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <span class="font-weight-500">Linkedin Learning-</span>
+                                        Became a Full-Stack Web Developer 
+                                        <a
+                                            href="https://www.linkedin.com/learning/certificates/9fefc8c597566c56b860728bbd27cdc43d7a540004d0de96a762b8eca264fdec"
+                                            target="_blank"
+                                        >
+                                        (view online)
+                                        </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Received the <span class="font-weight-500">Employee of the Month</span> award in <span class="font-weight-500">September 2023</span> for successfully completing a full-functional project with a <span class="font-weight-500">New Tech Stack</span> within a <span class="font-weight-500">Two Months</span> timeframe
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- Contact Section Start -->
-            <section class="contact-section sec-padding" id="contact">
+            <section class="contact-section sec-padding flex justify-center" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title">
@@ -298,11 +370,11 @@
                         <div class="contact-info">
                             <div class="contact-info-item">
                                 <h3>Email</h3>
-                                <p>karthickrs1998@gmail.com</p>
+                                <p><a href="mailto:karthickrs1998@gmail.com">karthickrs1998@gmail.com</a></p>
                             </div>
                             <div class="contact-info-item">
                                 <h3>Phone</h3>
-                                <p>+91 90958 39626</p>
+                                <p><a href="tel:+919095839626">+91 90958 39626</a></p>
                             </div>
                             <div class="contact-info-item">
                                 <h3>follow me</h3>
@@ -346,7 +418,7 @@
         <script src="js/email-service.min.js"></script>
         <script type="text/javascript">
             (function(){
-            emailjs.init("user_HQDzStbGqRLgGuK07CxzP");
+                emailjs.init("Xg8KLtwUEFWPtZOnr");
             })();
 
             document.querySelector("#send-message").addEventListener("click", e => {
@@ -368,7 +440,7 @@
                         e.target.classList.add("btn-disabled");
                         e.target.setAttribute("disabled","disabled");
                     
-                        emailjs.send('service_8qbzn0a', 'template_hliff8y', templateParams)
+                        emailjs.send('service_3v7fxpv', 'template_jppz70p', templateParams)
                         .then(function(response) {
                             e.target.innerHTML = `message sent <i class="far fa-smile"></i>`;
                         },

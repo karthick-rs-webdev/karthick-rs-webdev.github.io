@@ -154,6 +154,7 @@ img{
 .container{
     padding: 0 40px;
     width: 100%;
+    max-width: 100%;
 }
 
 ul{
@@ -173,6 +174,14 @@ ul{
 }
 .flex-end{
     justify-content: flex-end;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 /*------Animation---------*/
@@ -475,7 +484,7 @@ button{
 
 /* ------Home Section------- */
 .home-section{
-    padding: 120px 0;
+    padding: 80px 0;
 }
 .home-section.active{
     display: flex;
@@ -504,13 +513,12 @@ button{
 .home-img .img-box{
     max-width: 360px;
     background-color: var(--white-albha-25);
-    border: 8px solid var(--white-albha-25);
-    border-radius: 50%;
+    border: 1px solid var(--white-albha-40);
+    border-radius: 10px;
     margin: auto;
 }
 .home-img .img-box img{
     width: 100%;
-    border-radius: 50%;
 }
 
 /* ------About Section------ */
@@ -519,7 +527,7 @@ button{
     padding: 0 15px;
 }
 .about-text{
-    width: 60%;
+    width: 100%;
     padding: 0 15px;
 }
 .about-img .img-box{
@@ -536,6 +544,7 @@ button{
     text-transform: capitalize;
     font-size: 20px;
     margin: 20px 0;
+    font-weight: 500;
 }
 .about-text .skills{
     display: flex;
@@ -766,6 +775,97 @@ button{
     color: var(--main-color);
 }
 
+/*--------Tools and Achievements section--------*/
+    .tools-and-achievements-section {
+        height: auto;
+        min-height: auto;
+    }
+    .tools-section{
+        display: flex;
+        justify-content: space-around;
+    }
+    .tools-section-container {
+        margin-bottom: 40px;
+    }
+    .tools-and-achievements-section .section-sub-title-container {
+        margin-bottom: 25px;
+    }
+    .tools-and-achievements-section .section-sub-title-container .sub-title-bar {
+        border-bottom-width: 2px;
+        border-bottom-color: #6b7280;
+        position: absolute;
+        width: 100%;
+        bottom: 50%;
+        z-index: 1;
+    }
+
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title {
+        overflow: hidden;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title::before,
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title::after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title::before {
+        right: -4px;
+        margin-left: -50%;
+    }
+      
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title::after {
+        left: -4px;
+        margin-right: -50%;
+    }
+
+    .tools-and-achievements-section .section-sub-title-container .section-sub-title span {
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 0px 16px;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .tools-section-item{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .tools-section-item .item-title {
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .tools-section-item hr {
+        border: 1px solid black;
+        width: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px
+    }
+    .achievements-list {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .achievements-list ul {
+        list-style: disc;
+    }
+    .font-weight-500 {
+        font-weight: 500;
+    }
+    .achievements-list a {
+        color: #337ab7;
+    }
+/*--------Tools and Achievements section--------*/
+
 /*-----Contact section-------*/
 .contact-form,
 .contact-info{
@@ -862,6 +962,17 @@ button{
     .portfolio-section .portfolio-item{
         width: calc(50% - 30px);
     }
+    .tools-section-container,
+    .achievements-section-container  {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tools-section-item .item-title {
+        font-size: 16px;
+    }
+    .tools-section-item .item-content {
+        font-size: 14px;
+    }
 }
 @media(max-width:767px){
     .contact-form, .contact-info,
@@ -870,6 +981,9 @@ button{
     }
     .about-text{
         margin-top: 30px;
+    }
+    .about-text p {
+        text-align: justify;
     }
     .portfolio-section .portfolio-item{
         width: calc(100% - 30px);
@@ -883,6 +997,10 @@ button{
     }
     .contact-section .contact-info .contact-info-item{
         padding: 0;
+    }
+    .tools-section{
+        flex-direction: column;
+        gap: 16px;
     }
 }
 @media(max-width:575px){
@@ -903,5 +1021,16 @@ button{
     .portfolio-popup .pp-inner .pp-content .pp-body .description ul{
         display: block;
     }
-    
+    .achievements-list ul {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 767px) {
+    .sec-padding {
+        padding: 30px 0;
+    }
+    .section-title{
+        margin-bottom: 10px;
+    }
 }
